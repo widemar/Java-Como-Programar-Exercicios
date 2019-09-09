@@ -1,8 +1,10 @@
+package JavaExercicios;
+
 import java.util.Scanner;
 
-public class Exercicio_2_26 {
+public class Exercicio_2_16 {
     public static void main(String[] args) {
-        //Multiplos
+
         Scanner sc = new Scanner(System.in);
 
         int num0, num1;
@@ -13,10 +15,12 @@ public class Exercicio_2_26 {
         System.out.print("Digite outro valor inteiro: ");
         num1 = sc.nextInt();
 
-        if (num0 % num1 == 0 || num1 % num0 == 0) {
-            System.out.println("O número " + num1 + " é multiplo de " + num0);
+        if (num0 > num1) {
+            System.out.println("O número " + num0 + " é maior");
+        } else if (num0 == num1) {
+            System.out.println("Os números são iguais");
         } else {
-            System.out.println("Os números não são multiplos");
+            System.out.println("O número " + num1 + " é maior");
         }
     }
 }
