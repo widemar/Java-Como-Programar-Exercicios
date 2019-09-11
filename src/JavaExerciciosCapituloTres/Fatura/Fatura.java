@@ -44,16 +44,16 @@ public class Fatura {
     public void setPreco(Double preco) {
         this.preco = preco;
     }
-    public Double calculaFatura (){
-        if (this.quantidade<=0){
-            this.quantidade=0;
-        }
-        if (this.preco<=0){
-            this.preco =0.0;
-        }
-        double resultado = this.quantidade*this.preco;
-        return resultado;
 
+    public Double calculaFatura() {
+        if (this.quantidade <= 0) {
+            this.quantidade = 0;
+        }
+        if (this.preco <= 0) {
+            this.preco = 0.0;
+        }
+        double resultado = this.quantidade * this.preco;
+        return resultado;
 
 
     }
